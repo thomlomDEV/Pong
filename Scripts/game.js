@@ -17,11 +17,11 @@ var fieldWidth = 400, fieldHeight = 200;
 
 // paddle variables
 var paddleWidth, paddleHeight, paddleDepth, paddleQuality;
-var paddle1DirY = 0, paddle2DirY = 0, paddleSpeed = 3;
+var paddle1DirY = 0, paddle2DirY = 0, paddleSpeed = 8;
 
 // ball variables
 var ball, paddle1, paddle2;
-var ballDirX = 5, ballDirY = 5, ballSpeed = 2;
+var ballDirX = 5, ballDirY = 5, ballSpeed = 10;
 
 // game-related variables
 var score1 = 0, score2 = 0;
