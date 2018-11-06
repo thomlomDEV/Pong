@@ -391,13 +391,13 @@ function ballPhysics()
 	// limit ball's y-speed to 2x the x-speed
 	// this is so the ball doesn't speed from left to right super fast
 	// keeps game playable for humans
-	if (ballDirY > ballSpeed * 8)
+	if (ballDirY > ballSpeed * 100)
 	{
-		ballDirY = ballSpeed * 8;
+		ballDirY = ballSpeed * 100;
 	}
-	else if (ballDirY < -ballSpeed * 8)
+	else if (ballDirY < -ballSpeed * 100)
 	{
-		ballDirY = -ballSpeed * 8;
+		ballDirY = -ballSpeed * 100;
 	}
 }
 
@@ -444,14 +444,14 @@ function playerPaddleMovement()
 		// we move
 		if (paddle1.position.y < fieldHeight * 0.45)
 		{
-			paddle1DirY = paddleSpeed * 0.5;
+			paddle1DirY = paddleSpeed * 1;
 		}
 		// else we don't move and stretch the paddle
 		// to indicate we can't move
 		else
 		{
 			paddle1DirY = 0;
-			paddle1.scale.z += (10 - paddle1.scale.z) * 0.2;
+			paddle1.scale.z += (10 - paddle1.scale.z) * 1;
 		}
 	}	
 	// move right
@@ -461,14 +461,14 @@ function playerPaddleMovement()
 		// we move
 		if (paddle1.position.y > -fieldHeight * 0.45)
 		{
-			paddle1DirY = -paddleSpeed * 0.5;
+			paddle1DirY = -paddleSpeed * 1;
 		}
 		// else we don't move and stretch the paddle
 		// to indicate we can't move
 		else
 		{
 			paddle1DirY = 0;
-			paddle1.scale.z += (10 - paddle1.scale.z) * 0.2;
+			paddle1.scale.z += (10 - paddle1.scale.z) * 1;
 		}
 	}
 	// else don't move paddle
