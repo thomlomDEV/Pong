@@ -21,7 +21,7 @@ var paddle1DirY = 0, paddle2DirY = 0, paddleSpeed = 3;
 
 // ball variables
 var ball, paddle1, paddle2;
-var ballDirX = 1, ballDirY = 1, ballSpeed = 2;
+var ballDirX = 5, ballDirY = 5, ballSpeed = 2;
 
 // game-related variables
 var score1 = 0, score2 = 0;
@@ -29,7 +29,7 @@ var score1 = 0, score2 = 0;
 var maxScore = 7;
 
 // set opponent reflexes (0 - easiest, 1 - hardest)
-var difficulty = 0.2;
+var difficulty = 0.7;
 
 // ------------------------------------- //
 // ------- GAME FUNCTIONS -------------- //
