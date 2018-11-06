@@ -391,13 +391,13 @@ function ballPhysics()
 	// limit ball's y-speed to 2x the x-speed
 	// this is so the ball doesn't speed from left to right super fast
 	// keeps game playable for humans
-	if (ballDirY > ballSpeed * 2)
+	if (ballDirY > ballSpeed * 3)
 	{
-		ballDirY = ballSpeed * 2;
+		ballDirY = ballSpeed * 3;
 	}
-	else if (ballDirY < -ballSpeed * 2)
+	else if (ballDirY < -ballSpeed * 3)
 	{
-		ballDirY = -ballSpeed * 2;
+		ballDirY = -ballSpeed * 3;
 	}
 }
 
